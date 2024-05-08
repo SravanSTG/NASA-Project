@@ -86,7 +86,7 @@ describe("Launches API Tests", () => {
     });
 
     test("It should catch missing launchId", async () => {
-      const response = await request(app).delete("/launches/140").expect(404);
+      const response = await request(app).delete("/launches/740").expect(404);
 
       expect(response.body).toStrictEqual({
         error: "Launch not found",
